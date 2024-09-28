@@ -1,0 +1,63 @@
+Step no 1: download git from https://git-scm.com/downloads
+
+once it is downloaded install by selected default options
+
+click next -- next -- next and last finish.
+
+Once git installed successfully check version in cmd
+
+open cmd and execute below command: git --version
+
+--------------------------------------------------------------
+
+OPEN GitHub.com and create account by clicking on signUp.
+
+remember your email id which is associated with GitHub and also your username and password.
+
+now again let's configure global credentials
+
+open cmd and execute below command.
+
+git config --global user.email "enter your email id"
+git config --global user.name "enter your username"
+
+(below command to see the configured email and username)
+git config --global --list
+
+Now Let's create one folder named my project and create one file inside same.
+
+Let's open that folder in cmd / terminal
+
+after that initialize git repo
+
+> git init (it will initialize git repo to that folder and create one .git hidden folder in the same.
+
+to check the status use
+>git status
+
+to add files in staging area
+
+> git add "file name"
+
+to remove file from staging area
+
+> git rm --cached "file name"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
