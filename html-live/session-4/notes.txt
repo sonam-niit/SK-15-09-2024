@@ -1,0 +1,56 @@
+Form tag is used to create form <form></form>
+
+attribute of form tag
+
+action: where to submit your form (backend file trigger)
+
+	<form action="submit.php">
+
+   	</form>
+
+when you click on submit button your form is getting submitted to submit.php
+
+method: type of method get/post 
+	by default form method is get
+
+name: which is used to define name of the form
+------------------------------------------------------------
+we can use <label> tag for labeling any input you can associate input id value with label for attribute.
+
+input type submit create submit button when you click on it your form will get submitted and if the method is get then you can see the entered value by user in url.
+
+in URL if you see properly you can see the input field name value and the value entered by you, multiple fields separated by & symbol.
+	username=sonam&password=12345 
+
+Get VS POST
+--------------------
+Get is used to transfer small amount of data.
+values are visible in the URL.
+
+POST is used to transfer secret information and bigger form values.
+
+================================================================================
+Let's understand different types of input for creating form fields.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

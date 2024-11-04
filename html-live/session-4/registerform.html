@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+<body>
+    <h1>Registeration Form</h1><hr>
+    <form>
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Enter First Name" required/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter Last Name" required/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="uname">User Name</label>
+            <input type="text" id="uname" placeholder="Enter User Name" required/>
+        </div> <br/>
+        <div>
+            <label for="email">Email Id: </label>
+            <input type="email" id="email" required/>
+        </div>
+        <br/><div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob"/>
+        </div><br/>
+        <div>
+            <label for="profile">Profile Pic</label>
+            <input type="file" id="profile" />
+        </div> <br/>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" value="male" name="gender" id="gender" /> Male
+            <input type="radio" value="female" name="gender" id="gender" checked/> Female
+            <input type="radio" value="other" name="gender" id="gender" /> Others
+        </div><br/>
+        <div>
+            <label for="lang">Langauges Known</label>
+            <input type="checkbox" value="eng" name="lang1" id="lang"/> English
+            <input type="checkbox" value="hindi" name="lang2" id="lang" checked/> Hindi
+            <input type="checkbox" value="Marathi" name="lang3" id="lang"/> Marathi
+            <input type="checkbox" value="Gujarati" name="lang4" id="lang"/> Gujarati
+        </div><br/>
+        <div>
+            <label for="country">Select your Country</label>
+            <select id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="aus">Australia</option>
+            </select>
+        </div><br/>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="range" min="5000" max="100000" id="salary">
+        </div><br/>
+        <div>
+            <label for="color">Favrioute Color:</label>
+            <input type="color" id="color" value="#ff00ff"/>
+        </div><br />
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" required minlength="8"/>
+        </div> <br/>
+        <div>
+           <input type="submit" value="Register" />
+           <input type="reset" value="Reset" />
+        </div>
+    </form>
+</body>
+</html>
