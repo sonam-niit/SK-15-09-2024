@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-columns: 200px 2fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main-content"
+                "footer footer";
+        }
+        .header{
+            grid-area: header;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: orange;
+        }
+        .main-content{
+            grid-area: main-content;
+            background-color: lightsalmon;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img height="100" src="https://www.giverefer.com/thumbnails/1681422682.png" alt="logo">
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+            </nav>
+        </header>
+        <aside class="sidebar"></aside>
+        <main class="main-content"></main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
