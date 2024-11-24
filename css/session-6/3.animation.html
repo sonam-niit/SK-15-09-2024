@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            animation: shifting 5s infinite; /*animation-name duration iteration-count */
+            margin-top: 10px;
+            text-align: center;
+            position: relative;
+        }
+        @keyframes shifting{
+            from {left:0px}
+            to {left:1000px}
+        }
+        .liner{
+            animation-timing-function: linear;
+        }
+        .ease{
+            animation-timing-function: ease;
+        }
+        .ease-in{
+            animation-timing-function: ease-in;
+        }
+        .ease-out{
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out{
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="liner">Liner</div>
+    <div class="ease">Ease</div>
+    <div class="ease-in">Ease In</div>
+    <div class="ease-out">Ease Out</div>
+    <div class="ease-in-out">Ease In Out</div>
+
+</body>
+</html>
