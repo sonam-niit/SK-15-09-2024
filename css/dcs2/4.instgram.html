@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .instagram{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            background: linear-gradient(45deg,rgb(127, 127, 223) 0%,
+            magenta 25%, rgb(241, 90, 115) 50%, goldenrod 75%, rgb(245, 209, 9) 100%);
+            border-radius: 30px;
+            /* border: 2px solid black; */
+            box-sizing: border-box;
+        }
+        .inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110px;
+            width: 110px;
+            border: 12px solid white;
+            border-radius: 30px;
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 10px solid white;
+        }
+        .dot{
+            position: absolute;
+            top: 60px;
+            left: 133px;
+            height: 18px;
+            width: 18px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="instagram">
+        <div class="inner">
+            <div class="circle">
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
