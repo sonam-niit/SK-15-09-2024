@@ -1,0 +1,10 @@
+1. WAP to get principle amoount, rate of intrest and no of Year fro user and calculate Simple Intrest
+   I= P * R * N /100
+
+2. WAP to get height and breadth from the user and calculate area for rectangle
+
+3. WAP to get radius from user and calculare area and circumference of circle.
+
+4. WAP to get 2 numbers from the user and calculate addition, subtraction, multiplication and dividion.
+
+You can print output eithr in console or in browser or use alert.
