@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var input1 = prompt('Enter first number');
+        var input2 = prompt('Enter second number');
+        var num1 = Number(input1);
+        var num2 = Number(input2);
+        var operator = prompt(`Enter + for addition,- for subtraction, 
+                            / for division, * for multiplication`);
+        switch (operator) {
+            case "+":
+                var add = num1 + num2;
+                alert(`${num1} + ${num2} = ${add}`);
+                break;
+            case "-":
+                var sub = num1 - num2;
+                alert(`${num1} - ${num2} = ${sub}`);
+                break;
+            default: alert('Kindly choose correct operator')
+        }
+    </script>
+</body>
+
+</html>

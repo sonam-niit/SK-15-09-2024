@@ -1,0 +1,13 @@
+1. WAP to check weather a given number is even or odd.
+    (% modulas operator , It returns reminder)
+    (num % 2 == 0) write Logic
+
+2. WAP to take one number from user and also ask user like enter 1 for caculating square, 2 for
+calculating cube.
+    based on that perform operation using switch case.
+
+3. WAP to check if a given number is divisible by 5 or not.
+
+4. WAP to get number from user between 1-12 and print month of Year.
+
+5. Take marks or percentile from the user and based on that add some grades A,B,C,D
