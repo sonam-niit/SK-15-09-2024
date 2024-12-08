@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            var input1 = prompt("Enter any number");
+            var input2 = prompt("Enter any number");
+            var num1 = Number(input1);
+            var num2 = Number(input2);
+            var operator = prompt("Choose your Operator +, -, *, /");
+            switch (operator) {
+                case "+": console.log(`${num1} + ${num2} = ${num1 + num2}`);
+                    break;
+                case "-": console.log(`${num1} - ${num2} = ${num1 - num2}`);
+                    break;
+                case "*": console.log(`${num1} * ${num2} = ${num1 * num2}`);
+                    break;
+                case "/": console.log(`${num1} / ${num2} = ${num1 / num2}`);
+                    break;
+                default:
+                    console.log('Choose correct operator');
+            }
+            var option=prompt("Enter y to stop");
+            if(option=='y' || option=='Y')
+                break;
+        }
+    </script>
+</body>
+
+</html>
