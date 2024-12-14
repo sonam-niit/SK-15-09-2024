@@ -1,0 +1,18 @@
+Write a function to calculate simple intrest which takes 3 parameter and return simple intrest.
+to call above function create one more function named user input, prompt for 3 values and
+call the function this function print result in console.
+
+simpleIntrest(p,r,n){
+
+}
+userInput(){
+    let principle
+    let rateOfIntrest
+    let numOfYears
+
+    let result = simpleIntrest(principle,rateOfIntrest,numOfYears )
+}
+
+Write a function which takes 2 parameter anc calculate area of rectangle
+write a function which takes width and breadth for rectangle and call above created function
+and print result in console.
