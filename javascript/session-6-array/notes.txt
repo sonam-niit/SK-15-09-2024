@@ -1,0 +1,37 @@
+Array is a Data structure in JavaScript which is used to store multiple values in single variable.
+Its popular and mostly used data structure in any programming language.
+
+In array we can store any type of data like strings,numbers,arrays, objects etc...
+
+If the array holding same type of data then its called Homogeneous array
+if array is holding different type of data then its called heterogeneous array.
+
+Features
+------------
+1. Dynamic Size: we can increase and decrease size as per the requirements
+2. array index always starts from 0
+3. to get the length of an array we have property called length which you can use with the name of an array
+
+How to Create array?
+
+1. directly assigning values
+
+const names=['alex','john','catty','devid','eela'];
+
+2. create blank array:
+
+const nums=[];
+
+3. Array Creation using Constructor
+const array= new Array(4);
+
+//4 is the size of an array
+
+
+
+
+
+
+
+
+
