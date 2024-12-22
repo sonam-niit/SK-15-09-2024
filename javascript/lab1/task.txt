@@ -1,0 +1,60 @@
+Lab1 Task1
+--------------------
+Take 3 Inputs from the User
+ask user to enter first name as prompt
+middle name as prompt and last name as prompt and show the Users Full name
+using alert with Welcome Message
+
+FirstName: Sonam
+MiddleName: Nikunj
+Last Name: Soni
+
+Alert: Welcome Sonam Nikunj Soni
+
+Lab 1 Task2
+------------------
+
+Ask user to enter the 
+product Purchase Price
+product Selling price
+
+based on this find out user is in loss or profit and how much?
+
+PurchasePrice:: 1200
+SellingPrice:: 1500
+
+Output:: its Profit of 300
+
+PurchasePrice:: 900
+SellingPrice:: 700
+
+Output:: its Loss of 200
+
+You can show the output in console
+PurchasePrice: 900
+SellingPrice:: 700
+Loss is 200
+
+Lab1 Task3
+--------------------
+
+Unique Names Collector
+
+A user wants to collect unique names which not includes duplicates
+
+1. Take user name through prompt and add the taken name into array
+	you can use push method()
+2. Check no duplicates
+	but must check the name already exist in array or not (hint: includes())
+3. display all entered name when user enter done in prompt.
+
+ 
+Lab1 Task 4
+--------------------------
+Filter Even Elements from an array
+
+Create one array with some numbers [3,6,7,8,4,10,45,22,64,9,12]
+from the created array form a new array which takes only even
+numbers from the existing array and print the newly created array
+
+output will be: [6,8,4,10,22,64,12]

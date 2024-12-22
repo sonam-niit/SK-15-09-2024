@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const costPrice= Number(prompt("Enter Cost Price"));
+        const sellingPrice= Number(prompt("Enter Selling Price"));
+        // let status;
+        // let amount;
+        // if(sellingPrice>costPrice){
+        //     status='Profit'
+        //     amount=sellingPrice-costPrice;
+        // }else{
+        //     status='Loss'
+        //     amount=costPrice-sellingPrice;
+        // }
+        console.log('Cost Price:',costPrice);
+        console.log('Selling Price:',sellingPrice);
+        console.log(sellingPrice>costPrice ? 'Profit '+(sellingPrice-costPrice): 'Loss '+(costPrice-sellingPrice));
+    </script>
+</body>
+</html>

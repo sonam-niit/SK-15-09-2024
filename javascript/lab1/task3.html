@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Name Collector</title>
+</head>
+
+<body>
+    <script>
+        const array = [];
+        while (true) {
+
+            const input = prompt('Enter your name');
+            if (input.toLowerCase() == 'done')
+                break;
+
+            if(!array.includes(input))
+                array.push(input)
+        }
+        console.log('List of Unique Names')
+        for(let data of array){
+            console.log(data);
+            
+        }
+    </script>
+</body>
+
+</html>
