@@ -1,0 +1,18 @@
+JavaScript Objects
+-- collection of key value pairs
+-- keys are strings, values can be anything (string,number,array,objects)
+
+How to create Objects?
+1. Object Literal Syntax:
+
+    const student={
+        id:1,
+        name:"Sonam Soni",
+        email:'sonam@gmail.com',
+        address:'Mumbai',
+        phone:'+91 9876510988'
+    }
+
+2. Using New Object() Syntax:
+
+    
