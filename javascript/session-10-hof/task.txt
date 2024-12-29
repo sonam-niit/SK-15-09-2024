@@ -1,0 +1,13 @@
+1. Check if all elements in array are positive.
+2. Check if all objects have some specific property
+    users=[{name:'',age:''},{name:'',age:''},{name:'',age:''}]
+
+3. Use Filter function
+
+    users=[{name:'alex',active:true},{name:'bob',active:false},{name:'catt',active:true}]
+    
+    filter only active users
+
+4. Create one products array, {id,name,price}
+
+    filter only those products which price is less than 149
