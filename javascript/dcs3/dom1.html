@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="red">Hello</h1>
+    <h1 name="title">Hello</h1>
+    <h1>Hello</h1>
+
+    <script>
+        const result=document.getElementsByTagName('h1'); //return collection
+        const array=['user1','user2','user3']
+        for(let i=0;i<array.length;i++){
+            result[i].innerHTML=array[i]
+        }
+
+        const red= document.getElementsByClassName('red'); //return collection 
+        red[0].style.color='red'
+        
+        const name=document.getElementsByName('title')
+        name[0].innerHTML="Sample Title"
+        
+    </script>
+</body>
+</html>

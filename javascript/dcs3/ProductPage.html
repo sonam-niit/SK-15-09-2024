@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="d-none d-lg-block">Products</h1>
+        <hr>
+        <div id="prod" class="row"></div>
+    </div>
+    <script src="products.js"></script> <!--Include Data file here-->
+    <!-- Include your script for logic to load products in browser -->
+    <script>
+        let result = ''
+        for (let p of products) {
+            result += `<div class='col-md-6 col-lg-3'>
+                    <h2>${p.name}</h2>
+                    <p>About: ${p.description} </p>
+                    <h3>$${p.price}</h3>
+                    <p>Category: ${p.category}</p>
+                    <img src=${p.imgUrl} height=200 width=250/>
+                </div>`
+        }
+        document.getElementById('prod').innerHTML = result
+    </script>
+</body>
+
+</html>
