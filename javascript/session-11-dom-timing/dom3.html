@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="loader" src="https://media.tenor.com/-n8JvVIqBXkAAAAM/dddd.gif">
+    <div id="display"></div>
+    <script>
+        setTimeout(function(){
+           document.querySelector('#loader').style.display='none'
+           document.querySelector('#display').innerHTML='Data Loaded successfully'
+        }, 3000);
+    </script>
+</body>
+</html>

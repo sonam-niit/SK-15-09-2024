@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Count Down Timer</h1>
+    <div id="timer">00:00</div>
+    <button onclick="startTimer()">Start Timer</button>
+    <script>
+        let count=0;
+        const timer= document.querySelector('#timer')
+        function startTimer(){
+            timeInterval= setInterval(function(){
+                timer.innerHTML=`00:${count<10? '0':''}${count}`
+                count++;
+                if(count>60){
+                    alert('Timer Up')
+                    clearInterval(timeInterval)
+                    timer.textContent='00:00'
+                }
+            },1000)
+        }
+    </script>
+</body>
+</html>

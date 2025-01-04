@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+
+    <div id="mydiv">Hover Me</div>
+    <script>
+        const btn=document.querySelector('#btn');
+        btn.addEventListener('click',function(){
+            alert('Button clicked')
+        })
+        const mydiv= document.querySelector('#mydiv');
+        mydiv.addEventListener('mouseover',function(){
+            console.log('Mouse Hovered')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button {
+            height: 80px;
+            width: 300px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .offer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="show()" id="btn">Show</button>
+        <div class="offer" id="offer">
+            <img src="https://thumbs.dreamstime.com/b/special-offer-neon-sign-brick-wall-background-ai-325523874.jpg"
+                height="200" width="400" />
+        </div>
+    </div>
+
+    <script>
+        function show() {
+            const button = document.querySelector('#btn');
+            const div = document.querySelector('#offer');
+            if (button.textContent == 'Show') {
+                div.style.display = 'block'
+                button.textContent = 'Hide'
+            } else {
+                div.style.display = 'none'
+                button.textContent = 'Show'
+            }
+        }
+    </script>
+</body>
+
+</html>
