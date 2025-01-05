@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="postDetails"></div>
+    <script>
+        let req = new XMLHttpRequest(); //Create Object of XML HTTP Request
+        req.open('GET','https://jsonplaceholder.typicode.com/posts/1')
+        //Write Hanlder code once you receive data from backend
+        req.onload=function(){
+            if(req.status==200){
+                let details=req.responseText
+                const object= JSON.parse(details);
+                console.log(details);
+                document.getElementById('postDetails').innerHTML=`
+                <h1>${object.title}</h1>
+                <p>${object.body}</p>
+                `
+            }else{
+                console.log('Request Failed',req.status);
+                
+            }
+        }
+        //Error Handler
+        req.onerror=function(){
+            console.log('Request Failed');
+        }
+        //Trigger the request
+        req.send()
+    </script>
+</body>
+</html>
