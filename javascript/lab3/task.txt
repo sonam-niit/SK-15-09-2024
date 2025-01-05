@@ -1,0 +1,8 @@
+Calculator
+
+input field 1
+input field 2
+operator field
+submit button
+show result in below input field:: result field must be read only
+

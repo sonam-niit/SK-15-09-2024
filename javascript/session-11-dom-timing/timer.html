@@ -12,14 +12,17 @@
     <script>
         let count=0;
         const timer= document.querySelector('#timer')
+        const button= document.querySelector('button');
         function startTimer(){
             timeInterval= setInterval(function(){
                 timer.innerHTML=`00:${count<10? '0':''}${count}`
                 count++;
+                button.disabled=true
                 if(count>60){
                     alert('Timer Up')
                     clearInterval(timeInterval)
                     timer.textContent='00:00'
+                    button.disabled=false
                 }
             },1000)
         }
