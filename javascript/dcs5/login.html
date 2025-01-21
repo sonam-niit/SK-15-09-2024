@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="disabledBackButton()">
+    <form onsubmit="login(event)">
+        <input type="text" placeholder="Enter Name" id="uname" />
+        <br><br>
+        <input type="password" placeholder="Enter Password" id="password" />
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    <script>
+        function login(event) {
+            event.preventDefault(); //stop the default action in browser
+            const name = document.querySelector('#uname').value;
+            const password = document.querySelector('#password').value;
+            if (password == 'admin123'){
+                localStorage.setItem('name',name);
+                window.location = 'dashboad.html'
+            }
+            else
+                window.location = 'error.html'
+        }
+        function disabledBackButton(){
+            history.pushState(null,null,window.location.href);
+            window.onpopstate=function(){
+                history.pushState(null,null,window.location.href)
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+    <div id="player"></div>
+    <audio src="audios/audio1.mp3" autoplay controls muted id="song"></audio>
+    <script src="script/data.js"></script>
+    <script>
+        let html=''
+        for (const song of songs) {
+            html+= `<h1>${song.title}</h1>
+            <h2>Singer Name: ${song.singer} </h2>
+            <button onclick='playSong("${song.file}")'>Play Song</button>
+            <hr>
+            `
+        }
+        document.getElementById('player').innerHTML=html
+        
+        function playSong(file){
+            const audio=document.getElementById('song');
+            audio.setAttribute('src',file);
+        }
+
+    </script>
+</body>
+</html>
