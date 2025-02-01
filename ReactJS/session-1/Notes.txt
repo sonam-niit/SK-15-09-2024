@@ -1,0 +1,66 @@
+React
+------------------------
+Its a JavaScript library which is helping us to create frontend projects.
+We can create SPA (single page application)
+
+Its having multiple features:
+
+1. JSX: JavaScript XML
+
+	allows you to write HTML code to JS page directly
+	which makes your code more readable and easy to write.
+
+2. Virtual DOM:
+
+	Efficiently updates and renders components by comparing virtual DOM with Real DOM.
+
+	Reducing unnecessary re rendering, which improves application performance.
+
+3. Component Based Architecture:
+	
+	We can divide our application into multiple reusable components which can manage logic and UI 
+	Easy to maintain and scale.
+
+4. One-way binding:
+
+	Data always flows in one direction from parent to child component.
+	easy to make data management predictable.
+
+How to create React Application
+--------------------------------------
+first of all we need node JS to be installed in our system.
+
+Let's Verify
+
+open cmd
+node -v (check Node version)
+npm -v  (check NPM version)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
