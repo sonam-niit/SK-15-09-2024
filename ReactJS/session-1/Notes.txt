@@ -35,6 +35,80 @@ Let's Verify
 open cmd
 node -v (check Node version)
 npm -v  (check NPM version)
+npx -v (Check NPX version)
+
+NPM is node package manager
+it is used to manage the packages of Node
+you can install the packages like: npm install mysql
+you can uninstall the packages like: npm uninstall MySQL
+
+NPX is node package executor
+it will execute a particular package and gives you the required things without installing that package.
+
+Simply earlier we are installing react and then creating react projects but now we have npx using that we can create
+react project without installing react to our system.
+
+How?
+
+npx create-react-app firstapp (this command will create folder named firstapp)
+move to that folder: cd firstapp
+run application using: npm start
+==================================================================================
+
+We have another fastest way to create and run react application
+
+for that we can take help of vite tool.
+
+npm create vite@latest
+give the project name: firstapp
+select framework: React
+select Language: javascript
+press enter
+
+Your project must be ready
+
+Move to the folder: cd firstapp
+install dependencies: npm install
+open project in VS Code: code .
+run the project: npm run dev
+
+click on the link and see the output in the browser
+By default vite app runs on the default port 5173
+
+in browser: http://localhost:5173/
+
+You can see the default output of your application.
+
+Let's Understand the project Structure:
+
+package.json is the config file which comes with project creation
+
+when you execute npm install command it will create 
+package-lock.json file (it contains the location from where the packages downloaded)
+& node_modules folder (it contains all downloaded packages)
+
+readMe and gitignore files are added for GitHub
+
+by default it loads index.html file which is having one div with id root
+
+also index.html includes one script which is main.jsx
+this script is loading one component calles <App /> it code written in app.jsx
+
+you can change the code as mentioned below.
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to the world of React</h1>
+    </div>
+  )
+}
+export default App
+
+(save and check the output)
+
+
+
 
 
 
