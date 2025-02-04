@@ -1,0 +1,53 @@
+node is runtime environment using that we can run any javascript program withot embedding them 
+in HTMl, means we don'e required any browser to run javascript
+
+Earlier JS is only used for CSS (Client Side Scripting) but now
+we can use for SSS (Server Side Scripting)
+
+IN node to use any third party thing we need to install packages. which we can use for our
+project.
+
+This installation canbe done in 2 ways
+1. global installation
+    let's say if you want to use some package like type Script (language similar to javascript)
+    we can install them and we can run its command through terminal.
+
+    > npm i -g typescript
+    once it is installed you can verify the global packages
+    > npm ls -g
+    You can execute command of typescript in terminal
+    >tsc -v
+    (in case if you are not able to see the version aftre installation you can restart vscode
+    and check again)
+
+    again uninstall
+    >npm uninstall -g typescript
+    once it is uninstall then install it locally
+    >npm i typescript (this will install typescript locally/ means it will create
+    package.json, package-lock.json, node-modules folder)
+
+    now execute the command> tsc -v (you will get an error)
+    means if you want to execute few packages from terminal and you wwant to use it throught out
+    your system you can install package globally,
+
+    IF you want to use some certain packages with diffrent version in a seperate folders
+    the install package locally.
+
+    Its always suggested to go with local installation
+    ================================================================
+    We can also install few dependencies at develeopment level which is called dev dependencies.
+    These dependencies we can use for develeopment but not for production.
+
+    npm i nodemon --save-dev
+    you can verify this by opening your package.json file.
+
+    if you try to run directly from cmd it won't run it will error
+    but if you want to run you can open package.json file and add Script
+    let's i want to check version
+
+    add version command in package.json
+    "scripts": {
+    "version": "nodemon -v"
+  },
+
+  then run: npm run version and you can see version in terminal
