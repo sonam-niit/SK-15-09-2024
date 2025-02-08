@@ -1,0 +1,25 @@
+Whne you try to change normal variables value react
+cannot render the same.
+
+For that react provide concept of state.
+to create state we can use hook named useState()
+
+it can accept any value as an argument which consider
+initial value
+
+useState(0) //0 id the initial value
+useState('Sonam Soni')
+useState(null)
+useState([])
+useState({})
+
+this hook return an array where ther 0th index
+represent variable name and 1st index represents
+function to change the state of that variable
+
+const [name,setName]=useState('Sonam Soni');
+const [count,setCount]=useState(0);
+const [user,setUser]=useState(null)
+
+whenever the state get updated browser renders the 
+updated vallue
