@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Iphone 16 Pro",
+        "imgUrl":"https://casedodo.com/cdn/shop/files/Clear-16-Pro-Max.jpg?v=1726766957&width=480",
+        "price":134999
+    },
+    {
+        "id":2,
+        "name":"Mac Book",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqi8velnLGFXHvVQLb86nNJB97SCRtLNb-6w&s",
+        "price":99999
+    },
+    {
+        "id":3,
+        "name":"Boat Head phone",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK1caMWDrr5ukMGfL9-8DpuTC89fyJjOKMhQ&s",
+        "price":1999
+    },
+    {
+        "id":4,
+        "name":"Samsung Galaxy ultra",
+        "imgUrl":"https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztwins-539573384?$684_547_PNG$",
+        "price":59999
+    }
+]

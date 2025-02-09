@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "city":"New york",
+        "tempreture":22,
+        "condition":"Sunny",
+        "icon":"🌞"
+    },
+    {
+        "id":2,
+        "city":"London",
+        "tempreture":16,
+        "condition":"Cloudy",
+        "icon":"☁"
+    },
+    {
+        "id":3,
+        "city":"Tokyo",
+        "tempreture":28,
+        "condition":"Rainy",
+        "icon":"&#x1F327;"
+    },
+    {
+        "id":4,
+        "city":"Sydney",
+        "tempreture":25,
+        "condition":"Windy",
+        "icon":"🌪"
+    }
+]
