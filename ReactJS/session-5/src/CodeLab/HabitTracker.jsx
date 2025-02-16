@@ -10,6 +10,7 @@ function HabitTracker() {
     const changeStatus=(id)=>{
         setHabits(habits.map(habit=>habit.id===id?{...habit,completed:!habit.completed}:habit))
     }
+    // Write logic for deleting button
     return ( 
         <div>
             <h2>Habit Tracker</h2>
