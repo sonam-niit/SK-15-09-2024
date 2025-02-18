@@ -1,0 +1,29 @@
+create one folder samplerepo
+initialize git repo: git init
+
+create one file to your repo
+>echo "hello world" >file.txt (create new file with given data)
+
+add to staging area
+>git add .
+
+commit 
+>git commit -m "file added"
+>git branch -M main (update branch to main)
+
+go to your GitHub account create new repo
+>git remote add origin link-of-your-repo
+
+>git push -u origin main (push code to remote repo)
+
+now directly in browser you can add readMe file by clicking of create Readme
+add some content to it and commit from browser directly.
+
+Now locally if you try to update file.txt
+>echo "new line added" >> file.txt (update the existing file)
+>git add .
+>git commit -m "file updated"
+>git push -u origin main (this line will give error as remote branch is 1 step ahead from local)
+To make both branch at same level fo Git Pull
+>git pull (it will pull readme.md file to your local repo)
+>git push -u origin main (it will push code to remote Repo)

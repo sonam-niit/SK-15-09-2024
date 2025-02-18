@@ -1,10 +1,11 @@
-import TodoApp from "./componenst/todoapp"
+import Calculator from "./statedemos/Calculator"
+import Login from "./statedemos/Login"
 
 function App() {
 
   return (
-    <div className="container-fluid">
-      <TodoApp />
+    <div className="container">
+      <Calculator />
     </div>
   )
 }
