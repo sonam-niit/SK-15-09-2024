@@ -1,0 +1,49 @@
+Wheen we are using React application we can create local state
+which is used inside a single component, we can create using
+useState hook.
+
+But this variable we can use only inside a single component where
+we have create it.
+
+Now If you want to use it to its child component, we can take the help
+of props and we can pass data from parent to Child.
+
+What if you have multiple Parent Child herachical Structure.
+GrandParent --> Parent --> Child and child want to use Grand Parents data
+Pass data using props which is called Prop Drilling
+
+Some times code becomes very much complex if you are passing data between
+many components.
+
+What is Solution?
+    Context API 
+    Redux (Global State Management library)
+
+*********** Context API ****************
+-----------------------------------------
+
+Managing the data between multipl components
+To create it
+
+use createContext() function which is available in React
+
+once context is create create Provider for that context which can provide 
+multiple data, functions etc.....
+
+Once Provider is Ready register in one component like app or main.jsx file
+
+means where you want to use it outside of that you can put the Provider.
+example: if you want to use provide inside GrandParent and its all children 
+then include it in app component and inside that provide Grand Parent Comp.
+
+<Provider>
+    <GrandParent />
+</Provide>
+
+You can use now this provider data in GrandParent, parent and Child component
+without using props.
+
+How to Access Context?
+use hook named useContext()
+
+---- const {data_which_you_want_to_use} =useContext(Pass-name-of-Your-context)
