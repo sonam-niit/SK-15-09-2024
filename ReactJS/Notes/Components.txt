@@ -1,0 +1,32 @@
+Components
+-----------------
+Reusable piece of code using that we can structure our application.
+We can set how our application looks like (UI) and how it behaves.
+
+Using component we can break down our Bigger UI into small components.
+
+Components Types:
+
+1. Functional Components (modern component)
+ very much preferred now a days in react implementation
+
+These are JavaScript functions where you can create state and pass data as props and return JSX
+we can also use different types hooks like useState,useEffect etc..
+
+function MyComponent(){
+	//here we can declare variables 
+	//functions 
+	return(
+		<> Here We can write JSX</>
+	)
+}
+
+if you are using same component at same file then no need to export but if you wnat to use it in diffrent file then you have 
+to export
+like export default MyComponent
+
+When you are using it you can use it by importing the same.
+
+
+
+

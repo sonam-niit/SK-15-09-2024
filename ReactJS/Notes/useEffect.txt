@@ -1,0 +1,16 @@
+Use Effect is a hook -- useEffect()
+import it from react
+
+This hook is used to execute side effects means running something in 
+a background. No need to call manually but it will triggered based on some
+changes inside component.
+
+If you include useEffect hook without any dependency It will trigger first time when the component mounted in browser. Also, it will trigger everytime if  any state change inside that component
+
+If you are getting triggered output 2 times that is due to <sctrictMode> which is included inside main.jsx . you can comment it to stop that testing part.
+
+By default useEffect triggered everytime when any state change inside your component.
+
+I want to triggered useEffect only one time then?
+pass [] dependency then it will run only once.
+
