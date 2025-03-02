@@ -6,9 +6,9 @@ import ThemeProvider from './lab-session/ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider>
+    {/* <ThemeProvider> */}
       <App />
-    </ThemeProvider>
+    {/* </ThemeProvider> */}
     {/* Theme provider will provide its values to APP and its child components */}
   </StrictMode>,
 )

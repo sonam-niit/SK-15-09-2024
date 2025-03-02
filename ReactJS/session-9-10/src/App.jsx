@@ -4,16 +4,22 @@ import Login from "./lab-session/Login"
 import WindowSize from "./lab-session/WindowResize"
 import Register from "./session9/Register"
 import { ThemeContext } from "./lab-session/ThemeContext"
+import UsersList from "./axios/userslist"
+import Dashboard from "./axios/dashboard"
 
 function App() {
-  const {theme}= useContext(ThemeContext)
+  // const {theme}= useContext(ThemeContext)
   return (
-    <div className={`container-fluid ${theme=='light'?'bg-info text-dark':'bg-dark text-light'}`}>
-      <BackgroundMusic />
-      <WindowSize />
-      <Login />
-      {/* <Register /> */}
-    </div> 
+      <div>
+        <Dashboard />
+        {/* <UsersList /> */}
+      </div>
+    // <div className={`container-fluid ${theme=='light'?'bg-info text-dark':'bg-dark text-light'}`}>
+    //   <BackgroundMusic />
+    //   <WindowSize />
+    //   <Login />
+    //   {/* <Register /> */}
+    // </div> 
   )
 }
 
