@@ -18,12 +18,12 @@ function Dashboard() {
     const handlesubmit=async(e)=>{
         e.preventDefault();
         try {
-            input.id=Date.now()+""; //give unique number
+            input.id=Date.now()+""; //give unique number "" attaching to the number to convert it into string
             const resp= await axios.post('http://localhost:3000/users',input)
             if(resp.status==201){
                 alert('User Registered Successfully');
                 fetchData(); //to get updated data from server
-                setInput({ name: '', email: '', country: '' })
+                setInput({ name: '', email: '', country: '' }) //clean up form
             }
         } catch (error) {
             console.log(error)
@@ -34,7 +34,7 @@ function Dashboard() {
             const resp= await axios.delete('http://localhost:3000/users/'+id)
             if(resp.status==200){
                 alert('User Deleted Successfully');
-                fetchData(); //to get updated data from server
+                setUsers(users.filter(user=>user.id!=id)); //filter the deleted Data
             }
         } catch (error) {
             console.log(error)

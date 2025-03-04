@@ -6,12 +6,14 @@ import Register from "./session9/Register"
 import { ThemeContext } from "./lab-session/ThemeContext"
 import UsersList from "./axios/userslist"
 import Dashboard from "./axios/dashboard"
+import ProductDashboard from "./04-03/ProductDashboard"
 
 function App() {
   // const {theme}= useContext(ThemeContext)
   return (
       <div>
-        <Dashboard />
+        <ProductDashboard />
+        {/* <Dashboard /> */}
         {/* <UsersList /> */}
       </div>
     // <div className={`container-fluid ${theme=='light'?'bg-info text-dark':'bg-dark text-light'}`}>

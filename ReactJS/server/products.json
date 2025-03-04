@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1741100479824",
+      "name": "Croma Bluetooth Wireless Over Ear Headphones",
+      "price": "3499",
+      "category": "electronics",
+      "imgUrl": "https://m.media-amazon.com/images/I/61x3xPK2UUL.jpg",
+      "rating": "4.8"
+    },
+    {
+      "id": "1741100559868",
+      "name": "Thunder Pro Wireless Headphone",
+      "price": "999",
+      "category": "Electronics",
+      "imgUrl": "https://shop.zebronics.com/cdn/shop/files/Zeb-Thunderpro-blue-pic-1.jpg?v=1709202990&width=1200",
+      "rating": 5
+    },
+    {
+      "id": "1741102006535",
+      "name": "Beats Studio Pro Wireless Headphones",
+      "price": "37900",
+      "category": "Electronics",
+      "imgUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQTQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1687660671363",
+      "rating": 5
+    },
+    {
+      "id": "1741102136265",
+      "name": "Puma Shoes",
+      "price": "2999",
+      "category": "Shoes",
+      "imgUrl": "https://static.vecteezy.com/system/resources/thumbnails/049/620/811/small/a-blue-running-shoe-with-orange-laces-png.png",
+      "rating": "4.3"
+    },
+    {
+      "id": "1741104836464",
+      "name": "Pencil Box for Kids",
+      "price": "199",
+      "category": "Stationary",
+      "imgUrl": "https://www.fancydresswale.com/cdn/shop/files/Green-2_c896873a-ff8d-4917-8f5e-700e2be045f6_1024x1024.jpg?v=1685948464",
+      "rating": "4.7"
+    }
+  ]
+}
