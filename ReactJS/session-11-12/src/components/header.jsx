@@ -1,23 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-function Header() {
+function Header({loggedIn,setLoggedIn}) {
+    const navigate= useNavigate();
+    const logout=()=>{
+        setLoggedIn(false);
+        navigate('/login')
+    }
     return (
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <Link class="nav-link active"  to="/">Home</Link>
+        <ul className="nav justify-content-center">
+            <li className="nav-item">
+                {
+                    loggedIn? <button className="nav-link" onClick={logout}>logout</button> :
+                    <Link className="nav-link" to='login'>Login</Link>
+                }
             </li>
-            <li class="nav-item">
-                <Link class="nav-link" to='about'>About</Link>
+            <li className="nav-item">
+                <Link className="nav-link active"  to="/">Home</Link>
             </li>
-            <li class="nav-item">
-                <Link class="nav-link" to="contact">Contact</Link>
+            <li className="nav-item">
+                <Link className="nav-link" to='about'>About</Link>
             </li>
-            <li class="nav-item">
-                <Link class="nav-link" to='products'>Products</Link>
+            <li className="nav-item">
+                <Link className="nav-link" to="contact">Contact</Link>
             </li>
-            <li class="nav-item">
-                <Link class="nav-link" to='register'>Register Form</Link>
+            <li className="nav-item">
+                <Link className="nav-link" to='products'>Products</Link>
             </li>
+            <li className="nav-item">
+                <Link className="nav-link" to='register'>Register Form</Link>
+            </li>
+            
         </ul>
     );
 }

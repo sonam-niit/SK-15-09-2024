@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Products() {
     const [products,setProducts]=useState([]);
@@ -22,7 +23,7 @@ function Products() {
                 {
                     products.map(product=>(
                         <div className="col-lg-4" key={product.id}>
-                            <img src={product.thumbnail} />
+                        <Link to={`/details/${product.id}`}> <img src={product.thumbnail} /> </Link>  
                             <h4>{product.title}</h4>
                             <h5>Only at ${product.price}</h5>
                             <p>{product.description}</p>
