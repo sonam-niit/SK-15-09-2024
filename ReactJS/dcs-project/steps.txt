@@ -1,0 +1,33 @@
+create react project: npm create vite@latest 
+name: frontend, React, Javascript as langugae
+-- open in vs code: npm install
+-- install: npm i react-router-dom axios
+(react-router-dom for Routing and axios for API Call)
+
+-- open main.jsx and edit code as shown
+-- Create folder inside src named components
+
+create components: 
+                header.jsx
+                footer.jsx
+                home.jsx
+                login.jsx
+                register.jsx
+                app.jsx (edit as shown)
+
+run: npm run dev (check output)
+Link must be working for home, homeicon, register and login
+
+=================================================================
+To make above code realistic
+
+create one seperate backend folder and cretae data.json file
+open terminal: json-server data.json
+you can see the api endpoint through that you cna do crud operation
+
+in case json-server is not installed: npm i json-server -g (-g for global installation)
+
+Once your API is Reacy your can change code for register and login as shown
+After Login to redirect user to dashboard page create dashboard.jsx components
+also register it in app.jsx route code.
+                   

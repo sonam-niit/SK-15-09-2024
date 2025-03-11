@@ -1,5 +1,18 @@
 {
-    "users":[],
-    "products":[],
-    "orders":[]
+  "users": [
+    {
+      "id": "1741709630309",
+      "name": "Sonam Soni",
+      "email": "sonam@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "1741709664720",
+      "name": "Pankaj",
+      "email": "pankaj@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "products": [],
+  "orders": []
 }
