@@ -1,0 +1,60 @@
+Assume you are creating one ecommerce portal. Now here you want to manage one state named cart. 
+
+this state you want to use on header component, checkout component, cart component, products component.
+
+state is limited to one component and if you want to use it in multiple component then you have to pass that using props.
+
+but if you are using it in multiple components then your code will become very much complex.
+
+to manage the global state we can take help of Redux.
+
+Redux is a library which is used in React to manage state globally.
+
+To Manage state globally we need to understand some redux fundamentals.
+
+1. Global State: its state which is global which we can use in any component of application.
+
+2. Reducers: These are functions which can take 2 parameters 
+		1 is initial state 
+		2 is action
+
+		this function actually helps you to update state of your 		application
+3. Action: which is triggered by user and based on that we can call reducers to update state.
+
+Implementation Steps:
+
+1. Install Dependencies: npm i redux react-redux
+2. create one folder redux inside create store.js file
+3. Register this store inside main.jsx 
+	(to use the state globally we need to register)
+4. open main.jsx  and edit code as shown
+5. create Reducer named CounterReducer.
+6. Create RootReducer and add Counter Reducer inside the same
+	register rootReducer inside store.js
+7. if you want to read the state in any component then use useSelector() hook
+	it will read the state from that we can read count
+	you can check app.jsx where I have used the same.
+8. Create Counter.jsx component
+	here we are using useDispatch hook to dispatch the action
+
+----------------------------------------------------------------------------------------
+Similarly if you want to use another reducer.
+create UserReducer.js
+register inside rootReducer
+use inside Header.jsx to read the login status
+use inside Login.jsx component to dispatch the action.
+also created Dashboard Component for successful Redirection
+
+Here I have implemented react-router-dom for implementing navigatio
+
+	
+
+
+
+
+
+
+
+
+
+
