@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Sample Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "version": "nodemon -v"
+  },
+  "keywords": [],
+  "author": "Sonam Soni",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  }
+}
