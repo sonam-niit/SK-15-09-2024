@@ -1,0 +1,43 @@
+Modules:
+--------------------
+node js provides diffrent types of packages/Modules
+
+Using that we can directly implement our project.
+
+3 types of Modules:
+
+    1. Core Modules:
+        which is already coming when you install node js
+        default Modules
+        --  we can use it without installing them
+
+    2. Local Modules:
+        User Defined Modules
+        we can create them, we can use them
+        we can also publish them on NPM registery
+
+    3. Third Party Modules
+        external or third party Modules
+        if you want to use them then your have to install them
+
+********** Core Modules **************
+You can see the list of core modules on node js documentation page.
+common modules are 
+    OS
+    Path
+    URL
+    FS (file system)
+    HTTP (for creating server)
+
+-- while working any js code by default the module for your project is commonjs
+which ES5
+inside this if you want to use some module you have to use it using require
+const url = require('url')
+
+if you want to update it to ES6 module feature create package.json: npm init -y
+
+open package.json file
+add one property: type: 'module'
+
+then import module using import key word only
+import path from 'path';

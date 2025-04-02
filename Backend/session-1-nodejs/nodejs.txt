@@ -1,0 +1,219 @@
+What is NodeJS?
+
+Its a runtime environment. Its platform using that we can run Javascript whitout
+embedding it In HTML.
+
+Simply we can say that earlier JS we have executed inside the browser.
+That's why its called client side Scripting. (frontend)
+
+Now, we can run JS directly without taking help of any browser.
+So JS is also used as Server Side scripting. (backend)
+
+How to work with that?
+
+step 1: install Node JS
+https://nodejs.org/en/download (download windows .msi installer)
+
+just follow the simple installation steps b doing next next and finish.
+No need to change anything. Just keep default configuration.
+
+Now, let's verify the installation.
+open terminal (cmd)
+> node -v (give node version)
+> npm -v (gives npm version)
+
+NPM is node package manager with comes with nodejs only no need to intall 
+manually
+
+********* Why NodeJS? **********
+
+Node JS is javascript runtime build on Chrome V8 Engine. It allows you to run
+JS code outside the browser as well. Mailny called server side.
+
+1. Javascript everywhere
+    Its verstile language using that we can do frontend as well backend.
+    It has simplified the implementation.
+    Easy to share the code between client and server.
+
+2. Non-Blocking, Asynchronous I/O
+    uses event-driver and non-blocking architecture.
+    Handling multiple request at same time without any waiting.
+    good for perfomance.
+
+3. Fast Execution:
+    running of Google's V8 engine.
+4. NPM EcoSystem
+    Huge library of multiple tools and packages.
+5. Community Support
+6. Cross platform
+7. Real Time Capabilities
+
+We can use Node JS for
+----------------------------------
+    Rest APIs
+    Microservices
+    Real Time Application (chat, notifications)
+    Streaming Services
+    IoT Applications
+
+Copnanies using Node JS
+--------------------------------
+    Netflix
+    LinkedIn
+    Paypal
+    Uber
+    Walmart
+
+********* REPL **************
+
+Read Evaluate Print Loop
+
+How to open it: in your terminal write node and then enter
+
+to exit do ctrl+c 2 times
+
+------------------------------------------------------------------
+NPM ?
+
+Node package manager
+------------------------
+we can install, update, share and manage the reusable code 
+-- reusable code means packages or library or modules
+
+Key Features of NPM:
+
+1. package installation:
+2. create configuration file (package.json)
+3. Global and Local installation
+4. Create Scripts
+5. NPM registery
+6. Semantic Versioning (semver)
+   NPM uses version control with
+   ^ minor update 
+   ~ patch update
+
+Let's create Package.json.
+> npm init -y
+
+Let's Do some Local installation
+> npm install mysql (npm i mysql)
+
+when you install it will update your package.json file in dependencies
+also, it will create package-lock.json file where it is including exact location
+from where the dependencies downloaded.
+
+Also, where it is exactly downloaded 
+inside node_modules folder.
+
+When you share your code to someone just share it without node modules folder.
+why? 
+when they want to download it they can just execute one command.
+> npm install
+
+How to see installed dependencies:
+
+> npm list
+
+to uninstall
+> npm uninstall mysql
+
+Also, if we want to install more than 1 dependencies together how?
+
+> npm i express mongodb nodemon
+
+To uninstall
+
+> npm uninstall express mongodb nodemon
+
+in old node js for local installation we are using --save
+ npm i express --save (install in local)
+
+with latest npm i express that means it will install dependencies locally.
+
+few dependencies we required only for testing purpose when we are 
+doing development but its not required in production.
+
+those dependencies you can install in development dependencies
+how?
+
+npm i nodemon --save-dev  (only for development)
+npm i express (used in development + production)
+
+When you push it on Github must add .gitignore file to ignore node_modules
+folder.
+
+Let's talk about Global installation
+----------------------------------------
+
+global packages are getting installed inside your C: drive node_modules 
+folder which we can use in all directories.
+
+--when you install any package locally you can't run its command directly 
+from terminal because its installed locally.
+
+How to install globally
+------------------------------
+npm i typescript -g 
+npm i json-server -g 
+
+check it:: npm list -g
+verify local installation: npm list 
+
+if packages installed globally your can check version directly from terminal
+> json-server --version
+> tsc -v 
+
+uninstall Global packages
+
+> npm uninstall typescript -g
+> npm uninstall json-server -g
+
+But what if i have installed package locally and still i want to run command 
+from terminal..
+
+for that we can use script.
+
+open scrit in package.json file write your script and that you can run using
+npm run command
+
+npm run script-name
+
+For updating any package you can run
+> npm update
+
+Which packages we can install locally and which we can install globally
+
+let's say I am working with angular project version 12 or 15
+those dependencies required to be installed globally.
+
+When I am working with backend projects
+in folder we need to install dependencies locally
+because if you use global installation, let's say my project is created with express some x version
+
+I upgraded my dependencies to y 
+now if I am trying run my project will it work?
+
+So it is always suggested to install project dependencies locally.
+
+If you are creating package.json file by just using npm init then it will prmpt with
+some questions you can give values as per your requirements.
+If you don't want to give any value then just press enter so it will take default value.
+
+Last it will show you the cretaed file you can confirm the same using yes then it will create 
+package.json file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
