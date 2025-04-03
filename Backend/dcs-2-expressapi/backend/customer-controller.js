@@ -3,7 +3,7 @@ export const addCustomer = async (req, res) => {
     const { id, name, email, password } = req.body
 
     const resp = await storage.setItem(id, { id, name, email, password })
-    res.send({ message: "Customer Added", resp })
+    res.status(201).send({ message: "Customer Added", resp })
 }
 
 export const getAllCustomers = async (req, res) => {
@@ -15,7 +15,7 @@ export const getCustById = async (req, res) => {
     const id = req.params.id;
     const resp = await storage.getItem(id);
     if (resp)
-        return res.send(resp)
+        return res.send(resp) //by default status is 200
     return res.status(404).send({ message: "Customer Not Found" })
 }
 
