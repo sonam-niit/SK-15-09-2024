@@ -1,0 +1,52 @@
+operator $inc
+## increment age by 2 for all students
+
+db.student.updateMany({},{$inc: {age:2}})
+
+## Regex operator
+db.student.find({ course: {$regex: "devops", $options: "i"}})
+
+## get students whose name start with a
+db.student.find({ name: {$regex: "^A",$options: "i"}})
+
+Aggregation: total count, total sum, avg, min, max
+
+find total number of students course wise:
+db.student.aggregate([
+    {
+       $group: {
+			_id: "$course",
+            totalStudents: {$sum:1}
+       }
+    }
+])
+## Average Age per course
+db.student.aggregate([
+    {
+       $group: {
+			_id: "$course",
+            avgAge: {$avg: "$age"}
+       }
+    }
+])
+
+## find only devops students avg
+db.student.aggregate([
+    {$match: {course: "DevOps"}},
+    {
+       $group: {
+			_id: "$course",
+            count: {$sum:1},
+            avgAge: {$avg: "$age"}
+       }
+    }
+])
+## Sort By Age -1 for dec and +1 for asc
+db.student.aggregate([
+    {$sort: {age: -1}},
+])
+
+## another way
+db.student.find().sort({age:1})
+## after sort skip first 3 and take next 2 only
+db.student.find().sort({age:1}).skip(3).limit(2)
