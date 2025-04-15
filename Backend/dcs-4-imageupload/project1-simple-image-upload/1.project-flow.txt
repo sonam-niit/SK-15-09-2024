@@ -1,0 +1,15 @@
+step 1
+create package.json: npm init -y
+install dependencies: npm i express multer nodemon
+
+open package.json change 
+    "type":"module"
+add script -->  "start" : "nodemon index.json"
+
+create one folder named images inside your project folder
+create file fileupload-middleware.js
+    add code
+create index.js
+
+start app: npm start
+then check from postman
