@@ -1,0 +1,24 @@
+Flash messages basically used to display one-time notification to the users
+--> success or error messages after that redirect users
+
+If you are using some middleware which is session middleware for that we 
+can use.
+
+We can implement same using express, express-session and connect-flash
+
+ejs is template engine which is used to provide static pages directly
+from express
+
+Here I am using template engine so let's understand it.
+
+create package.json file using npm init -y
+instal dependencies:
+    npm i express express-session connect-flash ejs nodemon
+also edit  type:module and start script in package.json
+
+create app.js 
+create views folder:
+    create index.ejs
+    cretae user.ejs
+
+start server using npm start, check output

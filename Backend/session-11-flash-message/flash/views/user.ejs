@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User page</title>
+</head>
+<body>
+    <h1>Hello <%= user.name %></h1>
+    <p>Age: <%= user.age %></p>
+    <h2>Hobbies</h2>
+    <ul>
+        <% user.hobbies.forEach(hobby=>{%>
+            <li><%=hobby %></li>
+       <% })%>
+    </ul>
+</body>
+</html>
