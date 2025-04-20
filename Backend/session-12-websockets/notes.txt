@@ -1,0 +1,17 @@
+WebSockets is a comminication protocol which is providing full duplex 
+communication channels over a single TCP connection.
+
+WebSockets are used to build real time application like chat apps,
+live notification and games.
+
+HTTP is using request and response based approach, whereas WebSockets allows
+both client and servers send and receive data any time, without 
+having to request first.
+
+we will use ws library (package) to implement WebSockets
+
+cretae folder project, move to the folder: cd project
+create package.json: npm init -y
+set "type":"module" in package.json
+install ws dependency: npm i ws
+cretae file server.js 

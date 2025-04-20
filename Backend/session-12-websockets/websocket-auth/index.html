@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket with JWT Authentication</title>
+</head>
+
+<body>
+    <h1>Websocket Client</h1>
+    <input id="msgInput" placeholder="Enter Your Message" />
+    <button onclick="sendMessage()">Send Message</button>
+    <pre id="chatLog"></pre>
+    <script>
+        const token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFsZXgiLCJlbWFpbCI6ImFsZXhAZ21haWwuY29tIiwiaWF0IjoxNzQ1MTY1Njg5fQ._WkiJ6QoJZdGwP_MrFkS51aXKEt55gkaElgZQKKCk_k"
+        const socket = new WebSocket(`ws://localhost:8080/?token=${token}`);
+        const chatLog= document.getElementById('chatLog');
+        socket.addEventListener('message',(event)=>{
+            log('Connected to Server');
+            log(`Message from server: ${event.data}`)
+        })
+        socket.addEventListener('close',(event)=>{
+            log('Disconnected from Server');
+        })
+        function sendMessage(){
+            const msg = document.getElementById('msgInput').value;
+            socket.send(msg);
+            log(`Your: ${msg}`)
+        }
+        function log(message){
+            chatLog.textContent+=message+'\n'
+        }
+    </script>
+</body>
+
+</html>
