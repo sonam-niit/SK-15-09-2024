@@ -1,0 +1,40 @@
+Iterative Approach solves your problems by repeating a sequence of steps.
+It runs until it matches with a specified condition.
+
+To do that we have loops:
+
+for
+while
+do-while
+
+We can also do recursion (calling same function again and again until
+it reaches to a specified condition)
+
+******** Core Structure for Iterative Algorithm *********
+
+variable initialization
+
+loop (condition){
+    steps to perform multiple times
+    increase or decrease variable value
+}
+
+return result
+
+Let's Try to write a code to add sum of first 5 numbers.
+
+********** When to use Iterative Algorithms?? ********
+
+1. when each step is depends on the previous step's result.
+2. When your probles size is shrinks with every step.
+3. When recursion would cause stack overflow problem or too many function
+    calls.
+4. for Optimizing problems, search approches, sorting etc...
+
+examples:
+
+    Bubble Sort : sorting elements using swap logics
+    Binary Search : iterative approach to search element in sorted array
+    String Recersal : Reverse String charcters one by one
+    factorial calculation: use sequatial approach then recursion
+
