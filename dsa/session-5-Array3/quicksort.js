@@ -1,6 +1,6 @@
 function quicksort(arr,lb=0,up=arr.length-1){
     if(lb<up){
-        const pi = partition(arr,lb,up)
+        const pi = partition(arr,lb,up) //4
         quicksort(arr,lb,pi-1);//left
         quicksort(arr,pi+1,up);//right
     }
@@ -10,10 +10,14 @@ function partition(arr,lb,up){
     const pivot = arr[up]; //taking last element as pivot
     let i = lb-1;
     console.log(arr)
+    //compare and then adjust then into left and right part
     for(let j=lb;j<up;j++){
         if(arr[j]<pivot){
             i++;
-            [arr[i],arr[j]]=[arr[j],arr[i]]//swap
+            //[arr[i],arr[j]]=[arr[j],arr[i]]//swap
+            let temp=arr[i]
+            arr[i]=arr[j]
+            arr[j]=temp
         }
     }
     //we will put the pivot to its correct position

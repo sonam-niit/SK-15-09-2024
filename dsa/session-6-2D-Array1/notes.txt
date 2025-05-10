@@ -1,0 +1,10 @@
+2D Array - 2 dimentional Array
+
+represent data in matrix like structure
+Arrays of Arrays
+
+[
+    [1,2,3],
+    [3,4,5,6],
+    [0,2,7]
+]
