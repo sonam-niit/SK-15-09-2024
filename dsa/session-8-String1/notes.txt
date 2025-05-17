@@ -1,0 +1,6 @@
+String is a sequence of characters which is enclosed within quotes.
+
+let name = "sonam soni"
+
+This Strings are immutable in Javascript
+once it is created, their characters can't be changed individualy
