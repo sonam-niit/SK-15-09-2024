@@ -1,0 +1,12 @@
+1. Convert the given  string into Title case
+(convert each word first letter in capital)
+hi my name is sonam --> Hi My Name Is Sonam 
+
+2. String Compression:
+    aaabbcc --> a3b2c2
+
+3. find the very first non-repeating character
+
+    sonam soni - a
+
+
