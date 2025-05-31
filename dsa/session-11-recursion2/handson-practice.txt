@@ -1,0 +1,16 @@
+Longest Common SubSequence (LCS)
+ Given 2 strings s1 and s2
+ find the length of the longest sub sequence present in both
+
+ s1 = "abcde"
+ s2 = "ace"
+
+ length = 3 (ace)
+
+ -----------------------
+ s1 = "abc"
+ s2 = "def"
+
+ length = 0
+
+ //solve using plain recursion as well as optimized one
