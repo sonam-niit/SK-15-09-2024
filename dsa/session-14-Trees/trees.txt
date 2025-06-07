@@ -1,0 +1,31 @@
+Introduction to Trees
+-----------------------------------
+
+A Tree is a herarchical data structure which consists of nodes 
+which connected by edges.
+
+It actually creates real world tree but upside down, starting from root.
+
+Node: an element of Tree
+
+Root: top-most Node
+
+Parent: a Node which has branches (children)
+
+Child: A node derived from a Parent
+
+Leaf: A node with no children
+
+sub-tree: A tree inside another tree
+
+depth: length of  the path from root to the node
+
+height: length of the logest path from a root node to a Leaf
+
+-------------------Types Of Trees-----------------
+
+Binary Tree: Each Node has at most 2 children
+
+Binary Search Tree (BST): left child < right child
+
+N-ary Tree: Each node can have at most N children
