@@ -1,0 +1,24 @@
+BST - Binary Search Tree
+one type of Binary Tree which is having following rule
+
+    left child <node
+    right child > node
+
+No duplicates nodes allowed
+
+Why BST and where we can use it
+-----------------------------------
+Efficient Searching because its complexity is O(log n)
+
+Efficient for insertion/deletion: O(log n)
+
+common use case:
+    Searching Systems
+    auto completions
+    databases 
+    range queries
+
+-------------------Traversal Methodologies ---------------
+Inorder --> left - root - right
+pre order --> root - left - right
+post order --> left - right - root
