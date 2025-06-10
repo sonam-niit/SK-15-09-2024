@@ -22,3 +22,24 @@ common use case:
 Inorder --> left - root - right
 pre order --> root - left - right
 post order --> left - right - root
+
+
+BST Deletion 3 Cases
+----------------------------------------------
+To delete a node from  BST  we must preserve the BST property after removal.
+
+Let's say we want to delete a node with value.
+
+Case 1: Node has no children (leaf node):
+        just remove the node.
+
+case 2: Node has 1 child
+        Replace the node with its child
+
+case 3: Node has 2 children
+        find the in-order successor (smallest in right sub tree)
+        or in order predecessor (largest in left subtree)
+
+        Replace node's value with that
+
+        delete successor/predecessor node recursively
