@@ -1,0 +1,23 @@
+Stack is a linear data structure which follows LIFO principle
+Last in First out
+
+Stack always works in single direction.
+add the element for same side and remove the element from same side
+
+example: stack of books, stack of plates, stack of coins.
+
+Add element on top (push)
+
+Remove element from top (pop)
+
+======================================================
+Postfix Expresstion ("231*+9-")
+
+Logic : check if char is Num (isNaN(ch))
+            yes --> push it in stack
+
+            no then take 2 numbers using pop
+            b= stack.pop()
+            a= stack.pop()
+            perform operation by using switch case get the result
+            push the result again in stack
